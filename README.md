@@ -1,46 +1,35 @@
 # Student-Library-Database-System
 A comprehensive Library Database System built with SQL Server, featuring a relational schema (ERD) and 10 specialized T-SQL Stored Procedures for advanced reporting and borrowing management.
 Project Overview
-This project is a relational database system designed to manage library operations efficiently. It tracks books, authors, and student borrowings while ensuring data integrity through structured relationships and constraints.
+This project is a comprehensive Database Management System designed to handle library operations, including book inventory, author management, and student borrowing tracking. It was developed using SQL Server.
 
-🏗️ Database Architecture
-The system is built on a normalized schema consisting of 6 primary tables:
+Database Schema
+The system consists of 6 interconnected tables:
 
-Authors: Stores author profiles and contact information.
+Author: Stores details about book authors.
 
-Categories: Classification of books (e.g., Science, History).
+Categories: Classification of books.
 
-Books: Inventory details for all available titles.
+Books: Detailed inventory of available titles.
 
-Students: Management of library members and their details.
+Students: Management of library members.
 
-Borrowings: Transactional records for book loans and returns.
+Borrowings: Tracks transaction dates and overdue books.
 
-BookAuthors: A junction table facilitating the Many-to-Many relationship between authors and books.
+BookAuthors: A junction table managing the many-to-many relationship between books and authors.
 
-🚀 Key Features & SQL Procedures
-I have implemented 10 Stored Procedures to automate critical library reporting tasks:
+Key Features (SQL Procedures)
+The system includes 10 pre-defined SQL procedures to generate critical reports such as:
 
-Overdue Tracking: Identifies books not returned within the 14-day limit.
+Overdue books tracking (more than 2 weeks).
 
-Student Activity: Calculates the total books borrowed per student.
+Borrowing statistics per student and category.
 
-Recent Borrowing Analysis: Tracks students who borrowed books last week but haven't returned them.
+Identification of frequent borrowers.
 
-Inventory Stats: Counts books per author and per category.
+Technical Skills Applied
+Relational Database Design (ERD).
 
-Behavioral Insights: Identifies students borrowing the same book multiple times or across different categories.
+T-SQL (Stored Procedures, Joins, Aggregations).
 
-🛠️ Tech Stack
-RDBMS: Microsoft SQL Server
-
-Language: T-SQL
-
-Tool: SQL Server Management Studio (SSMS)
-
-📷 Database Diagram
-
-
-Author: Abdulrahman Hamza
-
-Faculty: Faculty of Computer and Information Systems, Mansoura University
+Data Integrity & Constraints.
